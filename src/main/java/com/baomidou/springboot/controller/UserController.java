@@ -26,6 +26,11 @@ public class UserController {
 	/**
 	 * AR 部分测试
 	 */
+	@RequestMapping("/hello")
+	public String index() {
+		return "hello";
+	}
+	
 	@RequestMapping("/test")
 	public Page<User> test() {
 		User user = new User("testAr", 0, 1);
